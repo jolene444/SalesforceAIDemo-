@@ -1,0 +1,27 @@
+﻿@page
+@model SalesforceAIForm.Pages.CustomerFormModel
+@{
+    ViewData["Title"] = "Customer Form";
+}
+
+<h1>Customer Information Form</h1>
+
+<form method="post">
+    <div>
+        <label>Name:</label>
+        <input asp-for="Customer.Name" required />
+    </div>
+    <div>
+        <label>Email:</label>
+        <input asp-for="Customer.Email" type="email" required />
+    </div>
+    <div>
+        <label>Query Details:</label>
+        <textarea asp-for="Customer.QueryDetails" required></textarea>
+    </div>
+    <div>
+        <label>Customer Interests:</label>
+        <input asp-for="Customer.CustomerInterests" required />
+    </div>
+    <button type="submit">Submit</button>
+</form>

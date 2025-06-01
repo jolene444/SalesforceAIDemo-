@@ -1,0 +1,9 @@
+# Ignore Visual Studio, build output, and local database
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+app.db
